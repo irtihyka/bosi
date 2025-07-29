@@ -1,0 +1,278 @@
+body {
+    background: linear-gradient(135deg, #FFD700 0%, #000 100%);
+    color: #FFD700;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 215, 0, 0.95);
+    color: #000;
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.wu-icon {
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #FFD700;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 2px 8px #000;
+}
+
+.intro-section {
+    background: rgba(34, 34, 34, 0.98);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 1.5px 0 #FFD700 inset;
+    padding: 2rem 1.5rem;
+    max-width: 400px;
+    margin: 2.5rem auto 1.5rem auto;
+    animation: fadeIn 1s ease;
+    backdrop-filter: blur(2px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+h1, h2, h3 {
+    color: #FFD700;
+    text-shadow: 0 2px 8px #000, 0 0px 2px #FFC300;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #222;
+    background: linear-gradient(90deg, #FFD700 80%, #FFC300 100%);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    font-weight: 600;
+}
+
+.info-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700;
+    text-align: center;
+    background: #111;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.extra-info {
+    background: linear-gradient(135deg, #222 80%, #FFD700 100%);
+    color: #FFD700;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+
+.extra-info h3 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.7rem;
+    color: #FFD700;
+    text-shadow: 0 1px 6px #222;
+}
+
+.extra-info ul, .extra-info ol {
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.extra-info a {
+    color: #FFD700;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.card-form {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    max-width: 350px;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeIn 1.2s ease;
+}
+
+.card-form label {
+    color: #FFD700;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.card-form input {
+    padding: 0.7rem;
+    border: 1px solid #FFD700;
+    border-radius: 6px;
+    background: #111;
+    color: #FFD700;
+    font-size: 1rem;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.card-form input:focus {
+    border-color: #FFC300;
+    box-shadow: 0 0 8px #FFD700;
+    outline: none;
+}
+
+.card-form button {
+    padding: 0.9rem;
+    background: linear-gradient(90deg, #FFD700 60%, #FFC300 100%);
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.card-form button:hover {
+    background: linear-gradient(90deg, #FFC300 60%, #FFD700 100%);
+    transform: scale(1.05);
+}
+
+.tips {
+    background: #111;
+    color: #FFD700;
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.tips a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+footer {
+    background: rgba(255, 215, 0, 0.95);
+    color: #000;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.10);
+}
+
+/* Stylish Track Number and Amount fields for receive-form */
+
+.receive-form {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    max-width: 350px;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.receive-form label {
+    font-size: 1.15rem;
+    color: #FFD700;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.receive-form input[type="text"],
+.receive-form input[type="number"],
+.card-form input[type="text"],
+.card-form input[type="number"] {
+    padding: 1rem;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #111 80%, #222 100%);
+    color: #FFD700;
+    font-size: 1.15rem;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.22), 0 0px 2px #FFD700 inset;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.receive-form input[type="text"]:focus,
+.receive-form input[type="number"]:focus {
+    border-color: #FFC300;
+    box-shadow: 0 0 16px #FFD700, 0 4px 16px rgba(0,0,0,0.22);
+    outline: none;
+}
+
+.receive-form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #FFD700 60%, #FFC300 100%);
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.18rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.22), 0 0px 2px #FFD700 inset;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.receive-form button:hover {
+    background: linear-gradient(90deg, #FFC300 60%, #FFD700 100%);
+    transform: scale(1.06);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35), 0 0px 2px #FFC300 inset;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 0.5rem;
+        margin-top: 110px; /* Add margin to prevent content hiding behind fixed header */
+    }
+    .card-form {
+        padding: 0.5rem;
+    }
+    .card-form input,
+    .card-form button {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}

